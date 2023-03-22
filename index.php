@@ -37,25 +37,33 @@ $blog_post = new post(
 
 <body class="bg-slate-900 text-white min-w-phone min-h-phone w-screen max-w-fit px-10% py-5%">
   <div id="body-container" class="bg-slate-800 w-full h-full p-10 rounded-3xl">
-    <header>
+    <header class="mb-12">
       <h1 class="text-center text-3xl font-bold mb-6"><?= $blog_post->getTitle(); ?></h1>
-      <div id="category" class="text-start text-xl font-medium italic my-8"><i class="fa-solid fa-tag"></i>
+      <div id="category" class="text-start text-xl font-thin italic my-8"><i class="fa-solid fa-tag"></i>
         <?= $blog_post->getCategory() ?></div>
     </header>
+    <hr>
     <main>
-      <section class="contentContainer">
-        <div class="content">
+      <section id="contentContainer" class="my-12">
+        <div id="content">
           <?= $blog_post->getContent(); ?>
         </div>
       </section>
-      <section class="author">
-        <div class="authorProfile">
-          <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile">
+      <hr>
+      <section id="author" class="my-12">
+        <p id="authorTittle" class="text-lg font-semibold my-4">Author</p>
+        <div id="authorContainer" class="flex h-100px">
+          <div id="authorProfile" class="rounded-full">
+            <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile" class="rounded-full w-100px">
+          </div>
+          <div id="authorInfo" class="text-2xl ml-6 flex flex-col justify-around">
+            <div class="authorName"><?= $blog_post->getAuthorName(); ?></div>
+            <div class="authorProfesion"><?= $blog_post->getProfession(); ?></div>
+          </div>
         </div>
-        <div class="authorName"><?= $blog_post->getAuthorName(); ?></div>
-        <div class="authorProfesion"><?= $blog_post->getProfession(); ?></div>
       </section>
     </main>
+    <hr>
     <footer>
       <p><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
     </footer>
