@@ -24,37 +24,40 @@ $blog_post = new post(
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Post Challenge</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
-    <h1><?= $blog_post->getTitle(); ?></h1>
-    <div class="category"><?= $blog_post->getCategory() ?></div>
-  </header>
-  <main>
-    <section class="author">
-      <div class="authorProfile">
-        <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile">
-      </div>
-      <div class="authorName"><?= $blog_post->getAuthorName(); ?></div>
-      <div class="authorProfesion"><?= $blog_post->getProfession(); ?></div>
-    </section>
-    <section class="contentContainer">
-      <div class="content">
-        <?= $blog_post->getContent(); ?>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
-  </footer>
+<body class="bg-slate-900 text-white min-w-phone min-h-phone p-30%">
+  <div id="body-container" class="bg-slate-800">
+    <header>
+      <h1><?= $blog_post->getTitle(); ?></h1>
+      <div class="category"><?= $blog_post->getCategory() ?></div>
+    </header>
+    <main>
+      <section class="author">
+        <div class="authorProfile">
+          <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile">
+        </div>
+        <div class="authorName"><?= $blog_post->getAuthorName(); ?></div>
+        <div class="authorProfesion"><?= $blog_post->getProfession(); ?></div>
+      </section>
+      <section class="contentContainer">
+        <div class="content">
+          <?= $blog_post->getContent(); ?>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
+    </footer>
+  </div>
 </body>
 
 </html>
