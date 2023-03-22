@@ -34,24 +34,24 @@ $blog_post = new post(
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-900 text-white min-w-phone min-h-phone p-30%">
-  <div id="body-container" class="bg-slate-800">
+<body class="bg-slate-900 text-white min-w-phone min-h-phone w-screen max-w-fit px-10% py-5%">
+  <div id="body-container" class="bg-slate-800 w-full h-full p-10 rounded-3xl">
     <header>
-      <h1><?= $blog_post->getTitle(); ?></h1>
-      <div class="category"><?= $blog_post->getCategory() ?></div>
+      <h1 class="text-center text-3xl font-bold mb-6"><?= $blog_post->getTitle(); ?></h1>
+      <div id="category" class="text-center text-xl font-medium italic"><?= $blog_post->getCategory() ?></div>
     </header>
     <main>
+      <section class="contentContainer">
+        <div class="content">
+          <?= $blog_post->getContent(); ?>
+        </div>
+      </section>
       <section class="author">
         <div class="authorProfile">
           <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile">
         </div>
         <div class="authorName"><?= $blog_post->getAuthorName(); ?></div>
         <div class="authorProfesion"><?= $blog_post->getProfession(); ?></div>
-      </section>
-      <section class="contentContainer">
-        <div class="content">
-          <?= $blog_post->getContent(); ?>
-        </div>
       </section>
     </main>
     <footer>

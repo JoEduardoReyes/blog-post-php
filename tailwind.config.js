@@ -8,7 +8,12 @@ module.exports = {
 		minHeight: {
 			phone: "230px",
 		},
-		extend: {},
+		extend: {
+			spacing: {
+				"10%": "10%",
+				"5%": "5%",
+			},
+		},
 	},
 	corePlugins: {
 		aspectRatio: false,
