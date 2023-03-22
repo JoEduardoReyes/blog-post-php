@@ -36,7 +36,7 @@ $blog_post = new post(
 </head>
 
 <body class="bg-slate-900 text-white min-w-phone min-h-phone w-screen max-w-fit px-10% py-5%">
-  <div id="body-container" class="bg-slate-800 w-full h-full p-10 rounded-3xl">
+  <div id="body-container" class="bg-slate-800 w-full h-full p-10 rounded-3xl shadow-2xl shadow-cyan-500/80">
     <header class="mb-12">
       <h1 class="text-center text-3xl font-bold mb-6"><?= $blog_post->getTitle(); ?></h1>
       <div id="category" class="text-start text-xl font-thin italic my-8"><i class="fa-solid fa-tag"></i>
@@ -53,7 +53,7 @@ $blog_post = new post(
       <section id="author" class="my-12">
         <p id="authorTittle" class="text-lg font-semibold my-4"><i class="fa-solid fa-pen-to-square"></i> Author</p>
         <div id="authorContainer" class="flex h-100px">
-          <div id="authorProfile" class="rounded-full">
+          <div id="authorProfile" class="rounded-full shadow-black/50 shadow-lg">
             <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile" class="rounded-full w-100px">
           </div>
           <div id="authorInfo" class="text-2xl ml-6 flex flex-col justify-around">

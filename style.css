@@ -513,10 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -540,10 +536,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -556,25 +548,20 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
+.h-100px {
+  height: 100px;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-100px {
-  height: 100px;
-}
-
 .min-h-phone {
   min-height: 230px;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-100px {
+  width: 100px;
 }
 
 .w-full {
@@ -583,10 +570,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-100px {
-  width: 100px;
 }
 
 .min-w-phone {
@@ -598,32 +581,12 @@ video {
   max-width: fit-content;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
 
-.place-items-center {
-  place-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-around {
   justify-content: space-around;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .rounded-3xl {
@@ -715,6 +678,28 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black\/50 {
+  --tw-shadow-color: rgb(0 0 0 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-cyan-500\/80 {
+  --tw-shadow-color: rgb(6 182 212 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 h2 {
