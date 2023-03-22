@@ -65,7 +65,7 @@ $blog_post = new post(
     </main>
     <hr>
     <footer>
-      <p><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
+      <p class="text-center mt-12"><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
     </footer>
   </div>
 </body>
