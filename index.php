@@ -51,7 +51,7 @@ $blog_post = new post(
       </section>
       <hr>
       <section id="author" class="my-12">
-        <p id="authorTittle" class="text-lg font-semibold my-4">Author</p>
+        <p id="authorTittle" class="text-lg font-semibold my-4"><i class="fa-solid fa-pen-to-square"></i> Author</p>
         <div id="authorContainer" class="flex h-100px">
           <div id="authorProfile" class="rounded-full">
             <img src=<?= $blog_post->getAuthorProfilePicture()?> alt="profile" class="rounded-full w-100px">
