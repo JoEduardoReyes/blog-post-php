@@ -1,0 +1,22 @@
+{
+	"name": "edark/blog-post",
+	"description": "UN proyecto de blog muy simple",
+	"type": "project",
+	"require-dev": {
+		"phpunit/phpunit": "^5.5"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"APP\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Eduardo Reyes",
+			"email": "joeduardoreyes@outlook.com"
+		}
+	],
+	"minimum-stability": "beta",
+	"require": {}
+}
