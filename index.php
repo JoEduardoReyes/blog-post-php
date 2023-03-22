@@ -32,13 +32,15 @@ $blog_post = new post(
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Post Challenge</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a11ab70f88.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-slate-900 text-white min-w-phone min-h-phone w-screen max-w-fit px-10% py-5%">
   <div id="body-container" class="bg-slate-800 w-full h-full p-10 rounded-3xl">
     <header>
       <h1 class="text-center text-3xl font-bold mb-6"><?= $blog_post->getTitle(); ?></h1>
-      <div id="category" class="text-center text-xl font-medium italic"><?= $blog_post->getCategory() ?></div>
+      <div id="category" class="text-start text-xl font-medium italic my-8"><i class="fa-solid fa-tag"></i>
+        <?= $blog_post->getCategory() ?></div>
     </header>
     <main>
       <section class="contentContainer">
