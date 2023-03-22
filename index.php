@@ -36,7 +36,7 @@ $blog_post = new post(
 <body>
   <header>
     <h1><?= $blog_post->getTitle(); ?></h1>
-    <div class="category"></div>
+    <div class="category"><?= $blog_post->getCategory() ?></div>
   </header>
   <main>
     <section class="author">
@@ -52,6 +52,9 @@ $blog_post = new post(
       </div>
     </section>
   </main>
+  <footer>
+    <p><q>Nunca Pares de Aprender</q> - I 💚 Platzi</p>
+  </footer>
 </body>
 
 </html>

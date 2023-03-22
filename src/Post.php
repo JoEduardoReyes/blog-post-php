@@ -39,8 +39,8 @@ class Post {
   }
   public function getCategory() {
     if ($this->category == "Categoría inválida")
-      return $this->category = "";
+      return "";
     else
-      return$this->category;
+      return $this->category;
   }
 }
